@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  {% block body%}
+
+    <!-- // Update -->
+    <div class="container">
+        <form action="/update1/{{task.sno}}" method="POST">
+            <div class=" form-group my-5">
+              <label for="title" class="form-label"><h2>Update To do</h2></label>
+              <input type="text" class="form-control" name="title" value="{{task.title}}">
+              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+            <div class=" form-group my-5">
+              <label for="desc" class="form-label"><h2>Update description</h2></label>
+              <input type="text" class="form-control"  name="desc" value="{{task.desc}}">
+            </div>
+            <div class="form-group">
+            <button type="submit" class="btn btn-success mb-5">Update</button>
+          </div>
+          </form>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    {% endblock%}
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
